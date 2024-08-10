@@ -1,3 +1,4 @@
+require("dotenv").config();
 const JUGNU = require("./handlers/Client");
 const { TOKEN } = require("./settings/config");
 const keep_alive = require('./keep_alive.js')
