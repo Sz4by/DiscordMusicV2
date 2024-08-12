@@ -43,6 +43,11 @@ module.exports = {
       member: interaction.member,
       textChannel: interaction.channel,
     });
+    interaction.deferReply();
+interaction.followUp({
+  content: `Searching ${song}`,
+  ephemeral: true,
+});
     interaction
       .followUp({
         content: `Searching \`${song}\``,
