@@ -47,12 +47,7 @@ module.exports = {
 interaction.followUp({
   content: `Searching ${song}`,
   ephemeral: true,
-});
-    interaction
-      .followUp({
-        content: `Searching \`${song}\``,
-        ephemeral: true,
-      })
+})
       .then((msg) => {
         setTimeout(() => {
           msg.delete().catch((e) => {});
